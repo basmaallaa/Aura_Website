@@ -60,7 +60,7 @@ function updateCategoryCounts() {
 let filtered = [...products];
 let activeCategory = 'all';
 let searchTerm = '';
-let maxPrice = 1000;
+let maxPrice = 2000;
 let sortBy = 'default';
 
 // ===== Read URL param =====
@@ -103,12 +103,15 @@ function render() {
     return matchCat && matchSearch && matchPrice;
   });
 
+  
   // Sort
   if (sortBy === 'price-asc')  filtered.sort((a,b) => a.price - b.price);
   if (sortBy === 'price-desc') filtered.sort((a,b) => b.price - a.price);
   if (sortBy === 'name')       filtered.sort((a,b) => a.name.localeCompare(b.name, 'ar'));
 
   resultsNum.textContent = filtered.length;
+  console.log("products:", products.length);
+console.log("filtered:", filtered.length);
   grid.innerHTML = '';
   noResults.style.display = filtered.length ? 'none' : 'flex';
 
@@ -165,7 +168,7 @@ priceSlider.addEventListener('input', e => {
 });
 
 maxPriceInput.addEventListener('change', e => {
-  maxPrice = parseInt(e.target.value) || 1000;
+  maxPrice = parseInt(e.target.value) || 2000;
   priceSlider.value = maxPrice;
   maxPriceDisplay.textContent = arabicPrice(maxPrice);
   render();
@@ -179,13 +182,13 @@ document.getElementById('sortSelect').addEventListener('change', e => {
 document.getElementById('resetFilters').addEventListener('click', () => {
   activeCategory = 'all';
   searchTerm = '';
-  maxPrice = 1000;
+  maxPrice = 2000;
   sortBy = 'default';
   document.getElementById('searchInput').value = '';
   document.querySelector('input[name=category][value=all]').checked = true;
-  priceSlider.value = 1000;
-  maxPriceInput.value = 1000;
-  maxPriceDisplay.textContent = '١٠٠٠ جنيه';
+  priceSlider.value = 2000;
+  maxPriceInput.value = 2000;
+  maxPriceDisplay.textContent = '٢٠٠٠ جنيه';
   document.getElementById('sortSelect').value = 'default';
   render();
 });

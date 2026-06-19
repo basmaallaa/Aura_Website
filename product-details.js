@@ -19,7 +19,7 @@ const catLabels = {
 };
 
 function arabicPrice(p) {
-  return Number(p).toLocaleString('ar-EG') + ' جنيه';
+  return Number(p).toLocaleString('ar-EG') +  ' ج.م';
 }
 
 function badgeClass(b) {
@@ -52,6 +52,7 @@ async function fetchProducts() {
     renderProduct();
     renderGallery();
     renderFeatures();
+    renderOptions();
     renderTags();
     renderRelated();
     setTitle();
@@ -155,6 +156,28 @@ function renderFeatures() {
     `;
     featuresEl.appendChild(el);
   });
+}
+
+//options
+function renderOptions() {
+  const optionsContainer = document.getElementById("productOptions");
+
+  if (!product?.options?.length) {
+    optionsContainer.innerHTML = "";
+    return;
+  }
+
+  optionsContainer.innerHTML = `
+    <h3 class="options-title">خيارات المنتج</h3>
+    <div class="options-grid">
+      ${product.options.map(option => `
+        <div class="option-card">
+          <span class="option-name">${option.name}</span>
+          <span class="option-price">${arabicPrice(option.price)} </span>
+        </div>
+      `).join("")}
+    </div>
+  `;
 }
 
 // ===== Tags =====
