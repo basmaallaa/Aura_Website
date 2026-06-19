@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura | هدايا راقية تعكس المشاعر</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.jpeg" alt="Aura By So" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">الرئيسية</a></li>
+        <li><a href="#categories">الفئات</a></li>
+        <li><a href="#bestsellers">الأكثر مبيعاً</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#categories">الفئات</a></li>
+        <li><a href="#bestsellers">الأكثر مبيعاً</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="brush-stroke brush-1"></div>
+      <div class="brush-stroke brush-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-up">✦ هدايا فريدة بلمسة فنية ✦</div>
+      <div class="hero-logo animate-fade-up delay-1">
+        <img src="images/logo.jpeg" alt="Aura By So" />
+      </div>
+      <h1 class="hero-title animate-fade-up delay-2">
+        هدايا تحمل <span class="gradient-text">روح</span> المشاعر
+      </h1>
+      <p class="hero-subtitle animate-fade-up delay-3">
+        فن الريزن الفريد الذي يُجسّد أجمل اللحظات ويحوّل المشاعر إلى تحف فنية رائعة
+      </p>
+      <div class="hero-buttons animate-fade-up delay-4">
+        <a href="products.html" class="btn btn-primary">تصفح المنتجات</a>
+        <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-5">
+        <div class="stat">
+          <span class="stat-num">+500</span>
+          <span class="stat-label">عميل سعيد</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">+200</span>
+          <span class="stat-label">تصميم فريد</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">مناسبات مميزة</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>اكتشف المزيد</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Strip -->
+  <section class="about-strip">
+    <div class="strip-items">
+      <div class="strip-item">
+        <span class="strip-icon">✦</span>
+        <span>تصاميم حصرية</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">✦</span>
+        <span>جودة راقية</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">✦</span>
+        <span>تخصيص حسب الطلب</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">✦</span>
+        <span>توصيل سريع</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">✦</span>
+        <span>مواد عالية الجودة</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">استكشف</span>
+        <h2 class="section-title">تصفح حسب المناسبة</h2>
+        <p class="section-subtitle">هدية مثالية لكل لحظة خاصة في حياتك</p>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card" onclick="goToProducts('babyshower')" data-category="babyshower">
+          <div class="cat-img-wrap">
+            <img src="Images/BabyShower/main1.jpeg" alt="سبوع البيبي" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+=            <h3>سبوع البيبي</h3>
+            <p>مرحباً بالقادم الجديد</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="goToProducts('graduation')" data-category="graduation">
+          <div class="cat-img-wrap">
+            <img src="Images/Graduation/main1.jpeg" alt="تخرج" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <h3>تخرج</h3>
+            <p>احتفل بإنجازاتهم</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="goToProducts('wedding')" data-category="wedding">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" alt="أفراح" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <h3>أفراح</h3>
+            <p>لحظات العمر الجميلة</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="goToProducts('eid')" data-category="eid">
+          <div class="cat-img-wrap">
+            <img src="Images/Eid/main3.jpeg" alt="العيد" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <h3>العيد</h3>
+            <p>فرحة العيد بأبهى صورة</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="goToProducts('ramadan')" data-category="ramadan">
+          <div class="cat-img-wrap">
+            <img src="Images/Ramdan/main1.jpeg" alt="رمضان" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <h3>رمضان</h3>
+            <p>أجواء روحانية مميزة</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="goToProducts('gifts')" data-category="gifts">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80" alt="هدايا" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <h3>هدايا</h3>
+            <p>لكل من تحب</p>
+            <span class="cat-arrow">←</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="bestsellers" id="bestsellers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">الأكثر طلباً</span>
+        <h2 class="section-title">المنتجات المميزة</h2>
+        <p class="section-subtitle">اختيارات عملائنا الأكثر شعبية وطلباً</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card" onclick="window.location='product-details.html?id=24'">
+          <div class="product-img-wrap">
+            <img src="Images/Wedding/main2.jpeg" alt="منتج 1" />
+            <div class="product-badge">الأكثر مبيعاً</div>
+            <div class="product-overlay">
+              <button class="overlay-btn">عرض التفاصيل</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">أفراح</span>
+            <h3>كارت أكريليك بشوكولاتة مخصص</h3>
+            <p>كارت أكريليك أنيق مزين بقطع شوكولاتة فاخرة، مع إمكانية إضافة أسماء العروسين أو اسم الشخص بشكل مخصص، ليكون توزيعة مميزة ولطيفة تناسب الأفراح والمناسبات الخاصة.</p>
+            <div class="product-footer">
+              <span class="product-price">٢٥٠ جنيه</span>
+              <button class="view-btn" onclick="event.stopPropagation(); window.location='product-details.html?id=1'">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="window.location='product-details.html?id=3'">
+          <div class="product-img-wrap">
+            <img src="Images/Graduation/main1.jpeg" alt="منتج 2" />
+            <div class="product-badge">الأكثر مبيعاً</div>
+            <div class="product-overlay">
+              <button class="overlay-btn">عرض التفاصيل</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">تخرج</span>
+            <h3>بوكس تخرج مميز ابيض </h3>
+            <p>طقم متكامل للاحتفال بيوم التخرج يشمل لوحة راتنج مخصصة وإطار صورة وبطاقة تهنئة فاخرة.</p>
+            <div class="product-footer">
+              <span class="product-price">٣٠٠ جنيه</span>
+              <button class="view-btn" onclick="event.stopPropagation(); window.location='product-details.html?id=2'">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="window.location='product-details.html?id=7'">
+          <div class="product-img-wrap">
+            <img src="Images/Eid/main3.jpeg" alt="منتج 3" />
+            <div class="product-badge">الأكثر مبيعاً</div>
+            <div class="product-overlay">
+              <button class="overlay-btn">عرض التفاصيل</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">عيد</span>
+            <h3>توزيعات عيد</h3>
+            <p>مجموعة هدايا عيد فاخرة بلمسات ذهبية</p>
+            <div class="product-footer">
+              <span class="product-price">٣٠
+ جنيه</span>
+              <button class="view-btn" onclick="event.stopPropagation(); window.location='product-details.html?id=3'">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="window.location='product-details.html?id=1'">
+          <div class="product-img-wrap">
+            <img src="Images/BabyShower/maj1.jpeg" alt="منتج 4" />
+            <div class="product-badge">الأكثر مبيعاً</div>
+            <div class="product-overlay">
+              <button class="overlay-btn">عرض التفاصيل</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">سبوع البيبي</span>
+            <h3>بوكس سبوع البيبي</h3>
+            <p>مجموعة هدايا رومانسية للاحتفال بقدوم المولود</p>
+            <div class="product-footer">
+              <span class="product-price">٢٥٠ جنيه</span>
+              <button class="view-btn" onclick="event.stopPropagation(); window.location='product-details.html?id=4'">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-cta">
+        <a href="products.html" class="btn btn-primary">عرض جميع المنتجات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section class="brand-story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-images">
+          <div class="story-img-main">
+            <img src="Images/ourStory.png" alt="Aura By So" />
+          </div>
+          <div class="story-img-accent">
+            <img src="Images/logo.jpeg" alt="Aura crafts" />
+          </div>
+          <div class="story-badge-float">
+            <span>✦</span>
+            <strong>صنع بحب</strong>
+          </div>
+        </div>
+        <div class="story-text">
+          <span class="section-tag">قصتنا</span>
+          <h2>فن من القلب<br/><span class="gradient-text">إلى قلبك</span></h2>
+          <p>في Aura ، نؤمن بأن كل هدية تحمل روحاً وقصة. نصنع كل قطعة بيدين مليئتين بالحب والشغف، لتعكس مشاعرك وتبقى في الذاكرة إلى الأبد.</p>
+          <p>نستخدم أجود أنواع الريزن والمواد الطبيعية لنخلق لك تحفاً فنية فريدة لا تجدها في أي مكان آخر.</p>
+          <div class="story-features">
+            <div class="feature">
+              <span class="feature-icon">🎨</span>
+              <div>
+                <strong>تصاميم حصرية</strong>
+                <p>كل قطعة مختلفة عن غيرها</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">💎</span>
+              <div>
+                <strong>مواد فاخرة</strong>
+                <p>جودة عالية تدوم طويلاً</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✍️</span>
+              <div>
+                <strong>تخصيص كامل</strong>
+                <p>حسب رغبتك وطلبك</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">آراء عملائنا</span>
+        <h2 class="section-title">ماذا قالوا عنا</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"هدية التخرج كانت أجمل ما رأيته! الشغل الدقيق والجودة العالية جعلت الهدية لا تُنسى"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ن</div>
+            <div>
+              <strong>نورا أحمد</strong>
+              <span>القاهرة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"طلبت بوكس للسبوع وكان خيالي! الألوان والتصميم رائعون، وكل ضيف كان يسأل عنه"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">م</div>
+            <div>
+              <strong>منى سعيد</strong>
+              <span>الإسكندرية</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"تعاملت معهم أكثر من مرة وفي كل مرة يتفوقوا على توقعاتي. خدمة ممتازة وتصليم سريع"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ر</div>
+            <div>
+              <strong>ريم خالد</strong>
+              <span>الجيزة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">تواصل معنا</span>
+        <h2 class="section-title">نحن هنا لك</h2>
+        <p class="section-subtitle">تواصلي معنا لطلب هديتك المثالية أو للاستفسار</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card" onclick="window.open('https://wa.me/201070282183','_blank')">
+          <div class="contact-icon whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h3>واتساب</h3>
+          <p>تواصل معنا مباشرة للطلب والاستفسار</p>
+          <span class="contact-link">+20 112 744 7181</span>
+        </div>
+
+        <div class="contact-card" onclick="window.open('https://instagram.com/aura_by_soo','_blank')">
+          <div class="contact-icon instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <h3>إنستغرام</h3>
+          <p>تابعونا لأحدث التصاميم والعروض</p>
+          <span class="contact-link">@aura_by_soo</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon phone">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <h3>الهاتف</h3>
+          <p>متاحون للرد على استفساراتك</p>
+          <span class="contact-link">+20 112 744 7181</span>
+        </div>
+
+        <div class="contact-card" onclick="window.open('https://www.facebook.com/share/18grkoHAEZ/','_blank')">
+  <div class="contact-icon facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.009 10.125 11.927v-8.437H7.078v-3.49h3.047V9.413c0-3.017 1.792-4.683 4.533-4.683 1.313 0 2.686.236 2.686.236v2.963h-1.514c-1.491 0-1.956.929-1.956 1.882v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.082 24 18.092 24 12.073z"/>
+    </svg>
+  </div>
+
+  <h3>فيسبوك</h3>
+  <p>تابعينا على صفحتنا الرسمية</p>
+  <span class="contact-link">Aura By Soo</span>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/logo.jpeg" alt="Aura By So" class="footer-logo" />
+          <p>فن الراتنج الفريد الذي يُجسّد أجمل المشاعر ويحوّلها إلى تحف فنية رائعة</p>
+          <div class="social-links">
+            <a href="https://wa.me/201070282183" target="_blank" class="social-link wa">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://instagram.com/aura_by_soo" target="_blank" class="social-link ig">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#categories">الفئات</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>المناسبات</h4>
+          <ul>
+            <li><a href="products.html?cat=graduation">تخرج</a></li>
+            <li><a href="products.html?cat=wedding">أفراح</a></li>
+            <li><a href="products.html?cat=babyshower">سبوع البيبي</a></li>
+            <li><a href="products.html?cat=eid">العيد</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>ابقَ على تواصل</h4>
+          <p>تابع أحدث التصاميم والعروض الحصرية</p>
+          <a href="https://wa.me/201070282183" target="_blank" class="btn btn-primary newsletter-btn">تواصل عبر واتساب</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Aura . جميع الحقوق محفوظة · صُنع بـ ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201070282183" target="_blank" class="whatsapp-float" aria-label="واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
